@@ -27,6 +27,11 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+@media (max-width: 992px) {
+  body::before {
+    background: #040404 url("../img/logo.png") top right no-repeat;
+  }
+}
 
 @media (min-width: 1024px) {
   body::before {
@@ -56,25 +61,7 @@ h6 {
 /*--------------------------------------------------------------
 # my description
 --------------------------------------------------------------*/
-#header p {
-  color: #45505b;
-  margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-}
-#header p span {
-  color: #0563bb;
-  letter-spacing: 1px;
-}
 
-@media (max-width: 992px) {
-
-  #hero p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
 /*--------------------------------------------------------------
 # End my description
 --------------------------------------------------------------*/
@@ -84,7 +71,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0.3s;
-  position: relative;
+  position: sticky;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -92,12 +79,23 @@ h6 {
   overflow-y: auto;
 }
 
+.header-description-box{
+  padding: 30px 30px 25px 30px;
+  width: 700px;
+  position: relative;
+  
+  background: rgba(255, 255, 255, 0.08);
+
+}
+
+
+
 #header * {
   transition: ease-in-out 0.3s;
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 90px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -153,13 +151,23 @@ h6 {
   background: #18d26e;
 }
 
-@media (max-width: 992px) {
+
+@media (max-width: 400px) {
+
+  .header-description-box{
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    
+    background: rgba(255, 255, 255, 0.158);
+  
+  }
   #header h1 {
-    font-size: 36px;
+    font-size: 43px;
   }
 
   #header h2 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
   }
 

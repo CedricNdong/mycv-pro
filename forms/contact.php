@@ -7,7 +7,7 @@
   */
 
 
-  $receiving_email_address = 'juniorndong901@gmail.com';
+  $receiving_email_address = 'cedric.ndong-gomo@thegeekengineer.de';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -18,6 +18,7 @@
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
   
+
   $contact->to = $receiving_email_address;
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
