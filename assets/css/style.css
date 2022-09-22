@@ -818,16 +818,16 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Certificate
 --------------------------------------------------------------*/
-.services .icon-box {
+.Certificate .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box .icon {
+.Certificate .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -841,12 +841,12 @@ section .container {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
+.Certificate .icon-box .icon i {
   color: #fff;
   font-size: 28px;
 }
 
-.services .icon-box .icon::before {
+.Certificate .icon-box .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -859,41 +859,41 @@ section .container {
   transform: translateZ(-1px);
 }
 
-.services .icon-box h4 {
+.Certificate .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.Certificate .icon-box h4 a {
   color: #fff;
 }
 
-.services .icon-box p {
+.Certificate .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.Certificate .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
 }
 
-.services .icon-box:hover .icon {
+.Certificate .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.Certificate .icon-box:hover .icon i {
   color: #18d26e;
 }
 
-.services .icon-box:hover .icon::before {
+.Certificate .icon-box:hover .icon::before {
   background: #35e888;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.Certificate .icon-box:hover h4 a,
+.Certificate .icon-box:hover p {
   color: #fff;
 }
 
